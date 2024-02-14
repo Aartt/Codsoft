@@ -1,0 +1,111 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/*CSS variables*/
+:root{
+    --navbaar--height:39px
+}
+/*navigation bar*/
+#navbar{
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    top:0px;
+}
+/*logo and image*/
+#logo{
+    margin:0px 0px;
+    height:1px;
+}
+#logo img{
+    height:6 px;
+    margin:14px 10px;
+}
+
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.8;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size:  1.3rem; 
+    
+    
+}
+#navbar  ul li a{
+    color:white;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar  ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/*home section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:552px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('/task1/img/img3.jpg')no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+    top:0px;
+}
+#home h1{
+    color:white;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align:center;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    font-size: 1.0rem;
+    border-radius:10px;
+    cursor:pointer;
+}
+footer{
+    background: rgb(9, 0, 0);
+    color: white;
+    margin-top: 10%;
+    padding: 9px 20px;
+    opacity: 0.7;
+    
+}
+.center{
+    text-align: center;
+    
+}
